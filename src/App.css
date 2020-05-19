@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: red;
 }
 
 .App-logo {
@@ -22,6 +23,13 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.carousel-indicators li {
+  background-color:#63b9ed;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
 }
 
 .App-link {
