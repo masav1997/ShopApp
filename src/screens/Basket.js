@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Form, Row, Card, Col, Button } from 'react-bootstrap';
+import { Form, Row, Card, Col, Button, Dropdown } from 'react-bootstrap';
 import Header from '../components/header';
 import Footer from '../components/footer';
 
@@ -81,45 +81,38 @@ class Basket extends React.Component {
 												0.5 л, Стекляная бутылка
 											</p>
 										</Col>
-										<Col style={{ alignSelf: 'center' }} xs={3} md={3} lg={2} sm={3}>
-											<p
-												style={{
-													fontSize: 18,
-													color: '#1E264E',
-													textAlign: 'left',
-													marginBottom: 4,
-													fontWeight: 'bold',
-												}}
-											>
-												499.28
-											</p>
-										</Col>
-										<Col
-											style={{ alignSelf: 'center', backgroundColor: '#fff' }}
-											xs={2}
-											md={2}
-											lg={1}
-											sm={2}
-										>
+										<Col style={{ alignSelf: 'center' }} xs={4} md={4} lg={2} sm={4}>
 											<Row>
+												<p
+													style={{
+														fontSize: 18,
+														color: '#1E264E',
+														textAlign: 'right',
+														marginBottom: 4,
+														fontWeight: 'bold',
+														marginLeft: 30
+													}}
+												>
+													1
+												</p>
 												<a href="/Basket" style={{ textDecoration: 'none' }}>
 													<img
 														width={24}
 														height={24}
 														alt="sale"
 														src={require('../assets/icons/min.png')}
-														style={{ marginLeft: 25, marginRight: 25 }}
+														style={{ justifySelf: 'flex-end', marginLeft: 80 }}
 													/>
 												</a>
 											</Row>
 										</Col>
-										<Col style={{ alignSelf: 'center' }} xs={2} md={2} lg={1} sm={2}>
+										<Col style={{ alignSelf: 'center' }} xs={2} md={2} lg={2} sm={2}>
 											<Form.Control type="default" style={{ borderColor: '#C0D0EA' }} />
 										</Col>
 										<Col
 											style={{ alignSelf: 'center', backgroundColor: '#fff' }}
-											xs={1}
-											md={1}
+											xs={2}
+											md={2}
 											lg={1}
 											sm={2}
 										>
@@ -145,17 +138,17 @@ class Basket extends React.Component {
 													fontWeight: 'bold',
 												}}
 											>
-												499.28
+												10
 											</p>
 										</Col>
-										<Col style={{ alignSelf: 'center' }} xs={1} md={1} lg={1} sm={12}>
+										<Col style={{ alignSelf: 'center' }} xs={1} md={1} lg={1} sm={1}>
 											<a href="/Basket" style={{ textDecoration: 'none' }}>
 												<img
 													width={24}
 													height={24}
 													alt="sale"
 													src={require('../assets/icons/del.png')}
-													style={{ alignSelf: 'flex-end' }}
+													style={{ marginLeft: '100%' }}
 												/>
 											</a>
 										</Col>
@@ -251,15 +244,24 @@ class Basket extends React.Component {
 								<p style={{ fontSize: 13, color: '#7285A4', marginBottom: 4 }}>
 									Адрес доставки (город, улица, дом)
 								</p>
-								<Form.Control
-									type="default"
-									style={{
+								<Dropdown style={{marginBottom: 10}}>
+									<Dropdown.Toggle id="dropdown-basic" style={{
 										backgroundColor: '#F3F6F7',
 										borderRadius: 8,
 										borderColor: '#F3F6F7',
 										marginBottom: 20,
-									}}
-								/>
+										color: '#1E264E',
+										width: '100%',
+									}}>
+										Москва, ул.Мира, 48
+									</Dropdown.Toggle>
+
+									<Dropdown.Menu style={{backgroundColor: '#F3F6F7', borderColor: '#F3F6F7', color: '#043E85', fontSize: 13, width: '100%'}}>
+										<Dropdown.Item href="#/action-1" >Москва, ул.Мира, 48</Dropdown.Item>
+										<Dropdown.Item href="#/action-2">Москва, ул.Мира, 48</Dropdown.Item>
+										<Dropdown.Item href="#/action-3">Москва, ул.Мира, 48</Dropdown.Item>
+									</Dropdown.Menu>
+								</Dropdown>
 								<hr
 									style={{
 										color: 'black',

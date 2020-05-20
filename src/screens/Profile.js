@@ -75,7 +75,9 @@ class Basket extends React.Component {
 											}}
 											onClick={(e) => this.setState({ open: true })}
 										>
+											<a href="#home" style={{textDecoration: 'none'}}>
 											Сменить телефон
+											</a>
 										</StyledHeading>
 									</Col>
 								</Row>
@@ -366,7 +368,7 @@ class Basket extends React.Component {
 										textAlign: 'left',
 									}}
 								>
-									<a href="/#" style={{ textDecoration: 'none' }}>
+									<a href="#home" style={{ textDecoration: 'none' }}>
 										Скопировать ссылку
 									</a>
 								</StyledHeading>

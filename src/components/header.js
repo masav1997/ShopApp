@@ -214,7 +214,7 @@ class Header extends React.Component {
 								}}
 								onClick={(e) => this.setState({ open: true })}
 							>
-								<a href="/#" style={{ textDecoration: 'none' }}>
+								<a href="#home" style={{ textDecoration: 'none' }}>
 									Выслать код
 								</a>
 							</StyledHeading>
@@ -245,7 +245,7 @@ class Header extends React.Component {
 						}}
 						onClick={() => this.setState({ open1: false, open3:true })}
 					>
-						<a href="/#" style={{ textDecoration: 'none' }}>
+						<a href="#home" style={{ textDecoration: 'none' }}>
 							Войти на сайт
 						</a>
 					</StyledHeading>
@@ -302,7 +302,7 @@ class Header extends React.Component {
 								}}
 								onClick={(e) => this.setState({ open: true })}
 							>
-								<a href="/#" style={{ textDecoration: 'none' }}>
+								<a href="#home" style={{ textDecoration: 'none' }}>
 									Выслать код
 								</a>
 							</StyledHeading>
@@ -333,7 +333,7 @@ class Header extends React.Component {
 						}}
 						onClick={() => this.setState({ open3: false, open1: true })}
 					>
-						<a href="/#" style={{ textDecoration: 'none' }}>
+						<a href="#home" style={{ textDecoration: 'none' }}>
 							Зарегистрироваться
 						</a>
 					</StyledHeading>

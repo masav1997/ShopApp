@@ -123,7 +123,7 @@ class Main extends React.Component {
 						}}
 						onClick={() => this.setState({ open1: false })}
 					>
-						<a href="/#" style={{textDecoration: 'none'}}>Нет, мне меньше 18</a>
+						<a href="#home" style={{textDecoration: 'none'}}>Нет, мне меньше 18</a>
 					</StyledHeading>
 				</Modal>
 				<div style={{ margin: 15, marginLeft: '5%', marginRight: '5%', marginBottom: 200 }}>
@@ -132,7 +132,7 @@ class Main extends React.Component {
 					</p>
 					<Row xs={2} md={5} lg={5} sm={3}>
 						<Col>
-							<a href="/#" onClick={(e) => this.setState({ open1: true })}>
+							<a href="#home" onClick={(e) => this.setState({ open1: true })}>
 								<Card
 									style={{
 										height: 'auto',

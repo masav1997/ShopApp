@@ -512,7 +512,7 @@ class ProductList extends React.Component {
 											</Row>
 										</Accordion.Toggle>
 									</Card.Header>
-									<Accordion.Collapse eventKey="1">
+									<Accordion.Collapse eventKey="2">
 										<Card.Body style={{ marginTop: -20, marginLeft: 15 }}>
 											<Form>
 												<Form.Group>
