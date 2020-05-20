@@ -43,7 +43,7 @@ class Basket extends React.Component {
 		return (
 			<div style={{ backgroundColor: '#E5E5E5' }}>
 				<Header />
-				<div style={{ margin: 15, marginLeft: '5%', marginRight: '5%', marginBottom: '30%'}}>
+				<div style={{ margin: 15, marginLeft: '5%', marginRight: '5%', marginBottom: '30%' }}>
 					<Row xs={1} md={1} lg={2} sm={1}>
 						<Col md={12} xs={12} lg={8} sm={12}>
 							<h1 style={{ fontSize: 32, color: '#1E264E', fontWeight: '600' }}>Профиль</h1>
@@ -119,7 +119,9 @@ class Basket extends React.Component {
 												}}
 												onClick={(e) => this.setState({ open: true })}
 											>
-												Выслать код
+												<a href="/#home" style={{ textDecoration: 'none' }}>
+													Выслать код
+												</a>
 											</StyledHeading>
 										</Col>
 									</Row>
@@ -169,7 +171,9 @@ class Basket extends React.Component {
 												}}
 												onClick={(e) => this.setState({ open: true })}
 											>
-												Выслать код
+												<a href="/#home" style={{ textDecoration: 'none' }}>
+													Выслать код
+												</a>
 											</StyledHeading>
 										</Col>
 									</Row>
@@ -295,16 +299,6 @@ class Basket extends React.Component {
 											Сохранить изменения
 										</Button>
 									</Col>
-									<Col style={{ alignSelf: 'center', marginBottom: 15 }}>
-										<StyledHeading
-											style={{
-												fontSize: 13,
-												textAlign: 'left',
-											}}
-										>
-											Сменить телефон
-										</StyledHeading>
-									</Col>
 								</Row>
 							</Card>
 						</Col>
@@ -372,7 +366,9 @@ class Basket extends React.Component {
 										textAlign: 'left',
 									}}
 								>
-									Скопировать ссылку
+									<a href="/#" style={{ textDecoration: 'none' }}>
+										Скопировать ссылку
+									</a>
 								</StyledHeading>
 							</Card>
 						</Col>
