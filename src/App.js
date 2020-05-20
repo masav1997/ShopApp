@@ -8,14 +8,10 @@ import Profile from './screens/Profile';
 import FriendShip from './screens/FriendShip';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import PreCacheImg from 'react-precache-img';
 
 function App() {
 	return (
 		<div style={{ backgroundColor: '#E5E5E5' }}>
-			<PreCacheImg
-      images={require('../src/assets/icons/slider.png')}
-    />
 			<Router>
 				<Route exact path="/" component={Main}/>
 				<Route exact path="/Catalog" component={ProductList}/>
