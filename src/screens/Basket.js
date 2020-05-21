@@ -48,14 +48,14 @@ class Basket extends React.Component {
 								}}
 							>
 								<Card.Body style={{ fontSize: 18, color: '#1E264E' }}>
-									<Row xs={12} md={12}>
+									<Row>
 										<Col
 											style={{
 												alignSelf: 'center',
 												justifySelf: 'flex-start',
 											}}
 											xs={4}
-											md={4}
+											md={2}
 											lg={2}
 											sm={4}
 										>
@@ -66,7 +66,7 @@ class Basket extends React.Component {
 												src={require('../assets/icons/pic4.png')}
 											/>
 										</Col>
-										<Col style={{ alignSelf: 'center' }} xs={8} md={8} lg={2} sm={8}>
+										<Col style={{ alignSelf: 'center' }} xs={8} md={3} lg={3} sm={8}>
 											<p
 												style={{
 													fontSize: 16,
@@ -81,38 +81,38 @@ class Basket extends React.Component {
 												0.5 л, Стекляная бутылка
 											</p>
 										</Col>
-										<Col style={{ alignSelf: 'center' }} xs={4} md={4} lg={2} sm={4}>
-											<Row>
+										<Col style={{ alignSelf: 'center' }} xs={2} md={1} lg={1} sm={2}>
 												<p
 													style={{
 														fontSize: 18,
 														color: '#1E264E',
-														textAlign: 'right',
+														textAlign: 'left',
 														marginBottom: 4,
 														fontWeight: 'bold',
-														marginLeft: 30
 													}}
 												>
 													1
 												</p>
+										</Col>
+										<Col style={{ alignSelf: 'center' }} xs={2} md={1} lg={1} sm={2}>
+											<Row>
 												<a href="/Basket" style={{ textDecoration: 'none' }}>
 													<img
 														width={24}
 														height={24}
 														alt="sale"
 														src={require('../assets/icons/min.png')}
-														style={{ marginLeft: 40}}
 													/>
 												</a>
 											</Row>
 										</Col>
-										<Col style={{ alignSelf: 'center' }} xs={2} md={2} lg={2} sm={2}>
-											<Form.Control type="default" style={{ borderColor: '#C0D0EA' }} />
+										<Col style={{ alignSelf: 'center' }} xs={3} md={2} lg={2} sm={3}>
+											<Form.Control type="default" style={{ borderColor: '#C0D0EA'}} className="align-self-end"/>
 										</Col>
 										<Col
 											style={{ alignSelf: 'center', backgroundColor: '#fff' }}
 											xs={2}
-											md={2}
+											md={1}
 											lg={1}
 											sm={2}
 										>
@@ -123,32 +123,31 @@ class Basket extends React.Component {
 														height={24}
 														alt="sale"
 														src={require('../assets/icons/plus.png')}
-														style={{ marginLeft: 25, marginRight: 25 }}
+														style={{ marginLeft: 25 }}
 													/>
 												</a>
 											</Row>
 										</Col>
-										<Col style={{ alignSelf: 'center' }} xs={3} md={3} lg={2} sm={3}>
+										<Col style={{ alignSelf: 'center' }} xs={3} md={1} lg={1} sm={3}>
 											<p
 												style={{
 													fontSize: 18,
 													color: '#1E264E',
-													textAlign: 'left',
-													marginBottom: 4,
+													textAlign: 'right',
 													fontWeight: 'bold',
+													marginBottom: 0
 												}}
 											>
 												10
 											</p>
 										</Col>
-										<Col style={{ alignSelf: 'center' }} xs={1} md={1} lg={1} sm={1}>
+										<Col style={{ alignSelf: 'center' }} xs={12} md={1} lg={1} sm={12}>
 											<a href="/Basket" style={{ textDecoration: 'none' }}>
 												<img
 													width={24}
 													height={24}
 													alt="sale"
 													src={require('../assets/icons/del.png')}
-													style={{ marginLeft: '100%' }}
 												/>
 											</a>
 										</Col>
