@@ -8,10 +8,13 @@ import Profile from './screens/Profile';
 import FriendShip from './screens/FriendShip';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import Header from './components/header';
+import Footer from './components/footer';
 
 function App() {
 	return (
 		<div style={{ backgroundColor: '#E5E5E5' }}>
+			<Header/>
 			<Router>
 				<Route exact path="/" component={Main}/>
 				<Route exact path="/Catalog" component={ProductList}/>
@@ -20,6 +23,7 @@ function App() {
 				<Route exact path="/Profile" component={Profile}/>
 				<Route exact path="/FriendShip" component={FriendShip}/>
 			</Router>
+			<Footer/>
 		</div>
 	);
 }
