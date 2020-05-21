@@ -101,7 +101,7 @@ class Basket extends React.Component {
 														height={24}
 														alt="sale"
 														src={require('../assets/icons/min.png')}
-														style={{ justifySelf: 'flex-end', marginLeft: 80 }}
+														style={{ marginLeft: 40}}
 													/>
 												</a>
 											</Row>

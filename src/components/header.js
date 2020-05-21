@@ -43,8 +43,8 @@ class Header extends React.Component {
 		return (
 			<div style={{ backgroundColor: '#fff' }}>
 				<Navbar bg="white" expand="lg" style={{ paddingBottom: 23 }}>
-					<Navbar.Brand href="/" style={{ justifyItems: 'flex-end', marginLeft: 40 }}>
-						<img src={require('../assets/icons/logo.png')} alt="Search" style={{ height: 32 }} />
+					<Navbar.Brand href="/" style={{ justifyItems: 'flex-start' }}>
+						<img src={require('../assets/icons/logo.png')} alt="Search" style={{ height: 32, width: 'auto' }} />
 						<Row style={{ marginLeft: 0, marginTop: 8, marginBottom: -36, marginRight: 0 }}>
 							<img
 								src={require('../assets/icons/phone.png')}
@@ -55,7 +55,7 @@ class Header extends React.Component {
 							<p style={{ fontSize: 11, marginLeft: 6, color: '#7285A4' }}>с 11:00 до 20:00</p>
 						</Row>
 					</Navbar.Brand>
-					<Navbar.Toggle aria-controls="responsive-navbar-nav" style={{ color: '#000' }} />
+					<Navbar.Toggle aria-controls="responsive-navbar-nav" style={{ color: '#000', width: 'auto', marginBottom: 20, marginTop: 20 }} />
 					<Navbar.Collapse id="basic-navbar-nav">
 						<Nav style={{ width: '65%' }}>
 							<Form
@@ -123,7 +123,7 @@ class Header extends React.Component {
 						</Nav.Link>
 						<Nav.Link
 							onClick={(e) => this.setState({ open1: true })}
-							style={{ fontSize: 13, marginRight: 40, width: 210 }}
+							style={{ fontSize: 13, width: 210 }}
 						>
 							<img
 								src={require('../assets/icons/profile.png')}
