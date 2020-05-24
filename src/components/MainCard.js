@@ -1,6 +1,7 @@
 import React from 'react';
 import { Row } from 'react-bootstrap';
 import MainCategoryCard from './MainCategoryCard';
+import DropdownBlock from './Dropdown';
 
 const containerStyle = {
 	margin: 15,
@@ -17,12 +18,23 @@ const titleStyle = {
 };
 
 class MainCard extends React.Component {
+	state = {
+		isRow: false,
+	};
 	render() {
+		const { isRow } = this.state;
 		const { title } = this.props;
 		return (
 			<div style={containerStyle}>
 				<p style={titleStyle}>{title}</p>
-				<Row xs={2} md={5} lg={5} sm={3}>
+				<Row style={{ marginTop: 10, marginLeft: -10 }}>
+					<DropdownBlock
+						title={isRow ? 'Списком' : 'Сеткой'}
+						onClick={(e) => this.setState({ isRow: true })}
+						onClick1={(e) => this.setState({ isRow: false })}
+					/>
+				</Row>
+				<Row xs={isRow ? 1 : 2} md={isRow ? 1 : 5} lg={isRow ? 1 : 5} sm={isRow ? 1 : 2}>
 					<MainCategoryCard href="/Catalog" img={require('../assets/icons/sale.png')} title="Акции" />
 					<MainCategoryCard href="/Catalog" img={require('../assets/icons/vodka.png')} title="Водка" />
 					<MainCategoryCard href="/Catalog" img={require('../assets/icons/beer.png')} title="Пиво" />

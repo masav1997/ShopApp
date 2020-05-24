@@ -6,6 +6,7 @@ import AboutDescription from '../components/AboutDescription';
 import AboutButton from '../components/AboutButton';
 import AboutTable from '../components/AboutTable';
 import ProductCard from '../components/ProductCard';
+import DropdownBlock from '../components/Dropdown';
 
 const containerStyle = {
 	margin: 15,
@@ -22,7 +23,11 @@ const titleStyle = {
 };
 
 class AboutProduct extends React.Component {
+	state = {
+		isRow: true,
+	};
 	render() {
+		const { isRow } = this.state;
 		return (
 			<div style={containerStyle}>
 				<Row xs={1} md={2} lg={2} sm={1}>
@@ -38,7 +43,20 @@ class AboutProduct extends React.Component {
 						<AboutButton />
 						<AboutTable title="Характеристики" />
 						<h2 style={titleStyle}>С этим товаром берут</h2>
-						<Row xs={1} md={2} lg={2} sm={1} xl={3} style={{ marginTop: 10 }}>
+						<Row style={{ marginTop: 10, marginLeft: -10 }}>
+							<DropdownBlock
+								title={isRow ? 'Списком' : 'Сеткой'}
+								onClick={(e) => this.setState({ isRow: true })}
+								onClick1={(e) => this.setState({ isRow: false })}
+							/>
+						</Row>
+						<Row
+							xs={isRow ? 1 : 2}
+							md={isRow ? 1 : 2}
+							lg={isRow ? 1 : 3}
+							sm={isRow ? 1 : 2}
+							style={{ marginTop: 10 }}
+						>
 							<ProductCard
 								href="/About"
 								productImg={require('../assets/icons/pilsner.jpeg')}
@@ -46,6 +64,9 @@ class AboutProduct extends React.Component {
 								type="0.5 л, Жестяная банка"
 								oldPrice="5050.12 ₽/шт"
 								price="499.28"
+								width={isRow ? '70%' : '93%'}
+								height={isRow ? '70%' : '93%'}
+								fontSize={isRow ? 18 : 15}
 							/>
 							<ProductCard
 								href="/About"
@@ -54,6 +75,9 @@ class AboutProduct extends React.Component {
 								type="0.5 л, Жестяная банка"
 								oldPrice="5050.12 ₽/шт"
 								price="499.28"
+								width={isRow ? '70%' : '93%'}
+								height={isRow ? '70%' : '93%'}
+								fontSize={isRow ? 18 : 15}
 							/>
 							<ProductCard
 								href="/About"
@@ -62,6 +86,9 @@ class AboutProduct extends React.Component {
 								type="0.5 л, Жестяная банка"
 								oldPrice="5050.12 ₽/шт"
 								price="499.28"
+								width={isRow ? '70%' : '93%'}
+								height={isRow ? '70%' : '93%'}
+								fontSize={isRow ? 18 : 15}
 							/>
 							<ProductCard
 								href="/About"
@@ -70,6 +97,9 @@ class AboutProduct extends React.Component {
 								type="0.5 л, Жестяная банка"
 								oldPrice="5050.12 ₽/шт"
 								price="499.28"
+								width={isRow ? '70%' : '93%'}
+								height={isRow ? '70%' : '93%'}
+								fontSize={isRow ? 18 : 15}
 							/>
 						</Row>
 					</Col>
