@@ -45,7 +45,7 @@ class BasketRegCard extends React.Component {
 						action3="Москва, ул.Мира, 48"
 					/>
 					<Line />
-					<ButtonWithoutImg />
+					<ButtonWithoutImg title="Оформить заказ"/>
 				</Card>
 			</Col>
 		);

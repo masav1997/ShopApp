@@ -8,7 +8,7 @@ class Basket extends React.Component {
 	render() {
 		return (
 			<div style={{ margin: 15, marginLeft: '5%', marginRight: '5%', marginBottom: '30%' }}>
-				<Row xs={1} md={1} lg={2} sm={1}>
+				<Row xs={1} md={1} lg={2} sm={1} className="flex-wrap-reverse">
 					<BasketProductCard
 						title="Товары в корзине"
 						img={require('../assets/icons/pic4.png')}

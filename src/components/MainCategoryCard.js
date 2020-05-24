@@ -13,8 +13,8 @@ const cardStyle = {
 const imgStyle = {
 	borderRadius: 16,
 	alignSelf: 'center',
-	width: '45%',
-	height: '45%',
+	width: '40%',
+	height: '40%',
 	marginTop: 24,
 };
 

@@ -22,7 +22,7 @@ class ProductList extends React.Component {
 		return (
 			<div style={containerStyle}>
 				<h2 style={titleStyle}>Вина</h2>
-				<Row xs={1} md={1} lg={2} sm={1}>
+				<Row xs={1} md={1} lg={2} sm={1} className="flex-wrap-reverse">
 					<ProductListCard
 						title="Сортировка:"
 						dropTitle="От дешёвых к дорогим"

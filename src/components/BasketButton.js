@@ -5,19 +5,18 @@ const buttonStyle = {
 	width: 40,
 	height: 40,
 	borderRadius: 8,
-	borderColor: '#043E85',
 };
 
 class BasketButton extends React.Component {
 	render() {
 		return (
-			<Button style={buttonStyle} variant="light">
+			<Button style={buttonStyle} variant="primary">
 				<img
 					width={24}
 					height={24}
 					alt="sale"
-					src={require('../assets/icons/basket.png')}
-					style={{ marginLeft: -5 }}
+					src={require('../assets/icons/basket1.png')}
+					style={{ marginLeft: -5  }}
 				/>
 			</Button>
 		);

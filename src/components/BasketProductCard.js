@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col, Card, Form } from 'react-bootstrap';
+import Line from './Line';
 
 const titleStyle = {
 	fontSize: 32,
@@ -116,6 +117,7 @@ class BasketProductCard extends React.Component {
 								</a>
 							</Col>
 						</Row>
+						<Line/>
 					</Card.Body>
 				</Card>
 			</Col>

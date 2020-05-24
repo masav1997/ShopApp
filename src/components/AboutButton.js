@@ -3,8 +3,8 @@ import { Row, Button } from 'react-bootstrap';
 import styled from 'styled-components';
 
 const StyledHeading = styled.h1`
-	font-size: 13px;
-	background: -webkit-gradient(linear, left top, right top, from(#63b9ed), to(#043e85));
+	font-size: 15px;
+	background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#E4E8ED));
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -18,9 +18,8 @@ const buttonStyle = {
 	width: 240,
 	height: 40,
 	borderRadius: 8,
-	borderColor: '#043E85',
 	marginBottom: 32,
-	padding: 10,
+	padding: 7,
 };
 
 const imgStyle = {
@@ -31,13 +30,13 @@ const imgStyle = {
 class AboutButton extends React.Component {
 	render() {
 		return (
-			<Button style={buttonStyle} variant="light">
+			<Button style={buttonStyle} variant="primary">
 				<Row style={{ justifyContent: 'center' }}>
 					<img
 						width={24}
 						height={24}
 						alt="sale"
-						src={require('../assets/icons/basket.png')}
+						src={require('../assets/icons/basket1.png')}
 						style={imgStyle}
 					/>
 					<StyledHeading>Добавить в корзину</StyledHeading>

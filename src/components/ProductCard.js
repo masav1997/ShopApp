@@ -54,7 +54,7 @@ class ProductCard extends React.Component {
 			<Col>
 				<a href={href} style={{ textDecoration: 'none' }}>
 					<Card style={cardStyle}>
-						<img width={'100%'} height={'100%'} alt="Product_Image" src={productImg} />
+						<img width={'70%'} height={'70%'} alt="Product_Image" src={productImg} />
 						<Card.Body style={cardBodyStyle}>
 							{name}
 							<p style={typeTextStyle}>{type}</p>

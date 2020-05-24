@@ -35,7 +35,7 @@ class ProductListCard extends React.Component {
 		const { title, dropTitle, dropAction1, dropAction2, dropAction3 } = this.props;
 		return (
 			<Col sm={12} md={12} xs={12} lg={9}>
-				<Row>
+				<Row style={{marginTop:10}}>
 					<StyledHeading2>{title}</StyledHeading2>
 					<Dropdown style={{ marginBottom: 10 }}>
 						<Dropdown.Toggle id="dropdown-basic" style={dropTitleStyle}>
@@ -49,7 +49,7 @@ class ProductListCard extends React.Component {
 						</Dropdown.Menu>
 					</Dropdown>
 				</Row>
-				<Row xs={1} md={2} lg={3} sm={1} style={{ marginTop: 10 }}>
+				<Row xs={1} md={2} lg={3} sm={1}>
 					<ProductCard
 						href="/About"
 						productImg={require('../assets/icons/jim.jpeg')}
