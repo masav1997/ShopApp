@@ -18,8 +18,8 @@ const rowStyle = {
 };
 
 const imgStyle = {
-	width: '80%',
-	height: '80%',
+	width: '90%',
+	height: '90%',
 	marginLeft: '5%'
 };
 
