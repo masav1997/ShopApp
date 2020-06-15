@@ -33,7 +33,7 @@ const dropActionStyle = {
 
 class ProductListCard extends React.Component {
 	state = {
-		isRow: true,
+		isRow1: true,
 	};
 
 	render() {
@@ -64,12 +64,12 @@ class ProductListCard extends React.Component {
 						onClick1={(e) => this.setState({ isRow: false })}
 					/>
 				</Row>
-				<Row xs={isRow ? 1 : 2} md={isRow ? 1 : 2} lg={isRow ? 1 : 3} sm={isRow ? 1 : 2}>
+				<Row xs={isRow ? 1 : 1} md={isRow ? 1 : 2} lg={isRow ? 1 : 3} sm={isRow ? 1 : 2}>
 					<ProductCard
 						href="/About"
 						productImg={require('../assets/icons/jim.jpeg')}
 						name="Упаковка пива Pilsner Urquell светлое фильтрованное 4.4%"
-						type="0.5 л, Жестяная банка"
+						type="0.5 л, Жестяная банкаыапаыпавпапаврврршне ыапварпва"
 						oldPrice="5050.12 ₽/шт"
 						price="499.28"
 						width={isRow ? '70%' : '93%'}
@@ -78,10 +78,10 @@ class ProductListCard extends React.Component {
 					/>
 					<ProductCard
 						href="/About"
-						productImg={require('../assets/icons/pilsner.jpeg')}
-						name="Упаковка пива Pilsner Urquell светлое фильтрованное 4.4%"
-						type="0.5 л, Жестяная банка"
-						oldPrice="5050.12 ₽/шт"
+						productImg={require('../assets/icons/jim.jpeg')}
+						name="Пиво Жигуль"
+						type="1 л, Жестянка"
+						oldPrice="5050.12"
 						price="499.28"
 						width={isRow ? '70%' : '93%'}
 						height={isRow ? '70%' : '93%'}

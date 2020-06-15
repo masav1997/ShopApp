@@ -24,7 +24,7 @@ const titleStyle = {
 
 class AboutProduct extends React.Component {
 	state = {
-		isRow: true,
+		isRow1: true,
 	};
 	render() {
 		const { isRow } = this.state;
@@ -61,9 +61,9 @@ class AboutProduct extends React.Component {
 								href="/About"
 								productImg={require('../assets/icons/pilsner.jpeg')}
 								name="Упаковка пива Pilsner Urquell светлое фильтрованное 4.4%"
-								type="0.5 л, Жестяная банка"
-								oldPrice="5050.12 ₽/шт"
-								price="499.28"
+								type="0.5 л, Жестяная банка sadsa"
+								oldPrice="5050.12 ₽/шт sgsf"
+								price="499.28 sdfsd"
 								width={isRow ? '70%' : '93%'}
 								height={isRow ? '70%' : '93%'}
 								fontSize={isRow ? 18 : 15}
@@ -71,9 +71,9 @@ class AboutProduct extends React.Component {
 							<ProductCard
 								href="/About"
 								productImg={require('../assets/icons/jim.jpeg')}
-								name="Упаковка пива Pilsner Urquell светлое фильтрованное 4.4%"
-								type="0.5 л, Жестяная банка"
-								oldPrice="5050.12 ₽/шт"
+								name="Пиво Жигуль"
+								type="1 л, Жестянка"
+								oldPrice="5050.12"
 								price="499.28"
 								width={isRow ? '70%' : '93%'}
 								height={isRow ? '70%' : '93%'}

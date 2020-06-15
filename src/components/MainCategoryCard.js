@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Card } from 'react-bootstrap';
+import { Col, Card, Row } from 'react-bootstrap';
 
 const cardStyle = {
 	height: 'auto',
@@ -8,6 +8,9 @@ const cardStyle = {
 	borderWidth: 0,
 	backgroundColor: 'white',
 	borderRadius: 16,
+	paddingLeft: 25,
+	paddingTop: 10,
+	paddingBottom: 10,
 };
 
 const imgStyle = {
@@ -15,14 +18,18 @@ const imgStyle = {
 	alignSelf: 'center',
 	width: '40%',
 	height: '40%',
-	marginTop: 24,
+	overflow: 'hidden',
+	maxWidth: 'auto',
 };
 
 const titleStyle = {
 	fontSize: 18,
 	color: '#1E264E',
 	textAlign: 'center',
-	marginBottom: 20,
+	alignSelf: 'center',
+	height: 45,
+	overflow: 'hidden',
+	maxWidth: 'auto',
 };
 
 class MainCategoryCard extends React.Component {
@@ -32,8 +39,10 @@ class MainCategoryCard extends React.Component {
 			<Col>
 				<a href={href} onClick={onClick}>
 					<Card style={cardStyle}>
-						<img alt="sale" src={img} style={imgStyle} />
-						<Card.Body style={titleStyle}>{title}</Card.Body>
+						<Row xs={2} md={2} lg={2} sm={2}>
+							<img alt="sale" src={img} style={imgStyle} />
+							<Card.Body style={titleStyle}>{title}</Card.Body>
+						</Row>
 					</Card>
 				</a>
 			</Col>

@@ -34,17 +34,17 @@ class MainCard extends React.Component {
 						onClick1={(e) => this.setState({ isRow: false })}
 					/>
 				</Row>
-				<Row xs={isRow ? 1 : 2} md={isRow ? 1 : 5} lg={isRow ? 1 : 5} sm={isRow ? 1 : 2}>
-					<MainCategoryCard href="/Catalog" img={require('../assets/icons/sale.png')} title="Акции" />
+				<Row xs={isRow ? 1 : 1} md={isRow ? 1 : 3} lg={isRow ? 1 : 4} sm={isRow ? 1 : 2}>
+					<MainCategoryCard href="/Catalog" img={require('../assets/icons/sale.png')} title="Акции и скидки" />
 					<MainCategoryCard href="/Catalog" img={require('../assets/icons/vodka.png')} title="Водка" />
 					<MainCategoryCard href="/Catalog" img={require('../assets/icons/beer.png')} title="Пиво" />
 					<MainCategoryCard href="/Catalog" img={require('../assets/icons/wine.png')} title="Вино" />
 					<MainCategoryCard href="/Catalog" img={require('../assets/icons/cognac.png')} title="Коньяк" />
 					<MainCategoryCard href="/Catalog" img={require('../assets/icons/whiskey.png')} title="Виски" />
-					<MainCategoryCard href="/Catalog" img={require('../assets/icons/champagne.png')} title="Шампс" />
+					<MainCategoryCard href="/Catalog" img={require('../assets/icons/champagne.png')} title="Шампанское" />
 					<MainCategoryCard href="/Catalog" img={require('../assets/icons/rum.png')} title="Ром" />
 					<MainCategoryCard href="/Catalog" img={require('../assets/icons/liquor.png')} title="Ликер" />
-					<MainCategoryCard href="/Catalog" img={require('../assets/icons/snack.png')} title="Закуск" />
+					<MainCategoryCard href="/Catalog" img={require('../assets/icons/snack.png')} title="Закуски" />
 				</Row>
 			</div>
 		);
